@@ -17,10 +17,9 @@ A full-stack web application for listing and managing restaurants, built with Re
 
 ## Screenshots
 
-![Home](./redme-imgs/home.png)
-![details](./redme-imgs/details.png)
-![add](./redme-imgs/create-restaurant.png)
-![edit](./redme-imgs/edit-restaurant.png)
+![Home](./readmeImages/home.png)
+![add](./readmeImages/add.png)
+![edit](./readmeImages/update.png)
 
 ## Tech Stack
 
