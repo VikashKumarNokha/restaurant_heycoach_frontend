@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function MediaCard({restaurantdata}) {
+export default function MediaCard({restaurantdata, deleteRestaurant}) {
 
     console.log("dddd",restaurantdata)
      
@@ -35,7 +35,7 @@ export default function MediaCard({restaurantdata}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Delete</Button>
+        <Button onClick={()=>deleteRestaurant(restaurantdata?.id)} size="small">Delete</Button>
         <Button size="small">Update</Button>
       </CardActions>
     </Card>

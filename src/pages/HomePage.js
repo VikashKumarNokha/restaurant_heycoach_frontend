@@ -21,6 +21,18 @@ function HomePage() {
        })
   }
 
+  function deleteRestaurant(id){
+    
+    return axios.delete(`${baseurl}restaurants/${id}`).then((res)=>{
+         console.log("resss", res.data)
+          if(res.data){
+            alert(" Restaurant Deleted Successfull");
+            getRestaurantlist();
+          }
+    }).catch((err)=>{
+        console.log("err", err);
+    })
+  }
      
 
 
@@ -34,7 +46,7 @@ function HomePage() {
         {
             restaurantData.length > 0 && restaurantData.map((e)=>{
                  return   <div key={e?.id} style={{margin : "10px"}}  >
-                            <MediaCard restaurantdata={e} />
+                            <MediaCard restaurantdata={e} deleteRestaurant={deleteRestaurant} />
                           </div>
             })
         }
