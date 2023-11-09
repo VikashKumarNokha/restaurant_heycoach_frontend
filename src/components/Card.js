@@ -5,10 +5,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useNavigate } from 'react-router-dom';
 
 export default function MediaCard({restaurantdata, deleteRestaurant}) {
 
-    console.log("dddd",restaurantdata)
+    const navigate = useNavigate()
      
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -36,8 +37,10 @@ export default function MediaCard({restaurantdata, deleteRestaurant}) {
       </CardContent>
       <CardActions>
         <Button onClick={()=>deleteRestaurant(restaurantdata?.id)} size="small">Delete</Button>
-        <Button size="small">Update</Button>
+        <Button onClick={()=>{ navigate(`/updaterestarant/${restaurantdata?.id}`);  }} size="small">Update</Button>
       </CardActions>
     </Card>
   );
 }
+
+// /updaterestarant/${restaurantdata?.id}
