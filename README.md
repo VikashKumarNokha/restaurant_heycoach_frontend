@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+<!-- # Restaurant-Listing application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Restaurant Listing Platform Full stack app with React.js, Node.js, Express.js MySQL Database
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Home](./redme-imgs/home.png)
+![details](./redme-imgs/details.png)
+![add](./redme-imgs/create-restaurant.png)
+![edit](./redme-imgs/edit-restaurant.png) -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Restaurant Listing Platform
 
-### `npm test`
+A full-stack web application for listing and managing restaurants, built with React.js, Node.js, Express.js, and MySQL database.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+![Home](./redme-imgs/home.png)
+![details](./redme-imgs/details.png)
+![add](./redme-imgs/create-restaurant.png)
+![edit](./redme-imgs/edit-restaurant.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - React.js
+  - Material-UI
+  - React Router (for routing)
+  - React hot toast
 
-### `npm run eject`
+- **Backend**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  - Node.js
+  - Express.js (Node.js web application framework)
+  - Sequelize (ORM for interacting with MySQL)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Database**:
+  - MySQL (Relational Database Management System)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Restaurant Listing**: Display a list of restaurants with their names, addresses, and contact information on the frontend.
 
-## Learn More
+- **Add New Restaurants**: Provide a form on the frontend to allow users to add new restaurants to the platform. The added restaurants are stored in the database.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Update Restaurants**: Implement functionality to update existing restaurants' information (name, address, contact) on the frontend and save the changes to the database.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Delete Restaurants**: Allow users to delete restaurants from the platform, removing them from the database.
 
-### Code Splitting
+## How to Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone this repository to your local machine.
 
-### Analyzing the Bundle Size
+2. Navigate to the "server" directory and run the following commands to set up the server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
+npm install
+node index.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
 
-### Advanced Configuration
+3. Open a new terminal, navigate to the "view" directory, and run the following commands to set up the client:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+cd view
+npm install
+npm run dev
+```
 
-### Deployment
+4. The application should be accessible in your web browser at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+If you would like to contribute to this project, feel free to open issues, create pull requests, or provide suggestions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Happy coding!
