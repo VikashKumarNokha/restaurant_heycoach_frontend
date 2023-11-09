@@ -43,4 +43,3 @@ export default function MediaCard({restaurantdata, deleteRestaurant}) {
   );
 }
 
-// /updaterestarant/${restaurantdata?.id}

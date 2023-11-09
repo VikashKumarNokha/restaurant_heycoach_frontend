@@ -13,6 +13,7 @@ function HomePage() {
         getRestaurantlist();
    },[ ])
 
+  //  this function for get all restaurants items 
   function getRestaurantlist(){  
        return  axios.get( baseurl + "restaurants").then((res)=>{
              console.log("resss",res)
@@ -21,7 +22,7 @@ function HomePage() {
           console.log("err", err);
        })
   }
-
+  //  this function is for delete the restaurent 
   function deleteRestaurant(id){
     
     return axios.delete(`${baseurl}restaurants/${id}`).then((res)=>{
@@ -35,18 +36,12 @@ function HomePage() {
     })
   }
 
-
-    
-  
-
-
-
   return (
     <div>
         {/* Navbar componenet for home page  */}
         <Navbar  />
         {/*navber end here  */}
-       
+        {/*  here showed all item  */}
         <div style={{display : "flex", justifyContent : "space-evenly", flexWrap :"wrap", margin : "10px"}}>
         {
             restaurantData.length > 0 && restaurantData.map((e)=>{
@@ -56,7 +51,7 @@ function HomePage() {
             })
         }
         </div>
-
+           {/* here footer  */}
         <Footer/>
     </div>
   )

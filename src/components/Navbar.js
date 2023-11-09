@@ -28,7 +28,7 @@ export default function Navbar({}) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Restaurant APP
+            RESTAURANT APP
           </Typography>
           <Button onClick={()=>navigate("/addrestarant")} color="inherit">Add Restaurant</Button>
         </Toolbar>

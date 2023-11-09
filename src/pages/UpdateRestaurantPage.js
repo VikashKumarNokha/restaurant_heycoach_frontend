@@ -29,7 +29,7 @@ function UpdateRestaurantPage() {
       
    },[])
 
-
+  //  this function is get restaurant by Id
   function getRestaurantbyid(id){    
     return axios.get(`${baseurl}restaurants/${id}` ).then((res)=>{
          console.log("resss", res.data)
@@ -40,8 +40,8 @@ function UpdateRestaurantPage() {
     })
   }
     
-  function editRestaurant(){ 
-        
+  //  this function is for edit the restaurant
+  function editRestaurant(){      
     if(editdata.name == "" || editdata.image_url == "" || editdata.address == "" ||  editdata.email == "" ||  editdata.phone == "" || user_id == "" ){
       alert("please fill all input boxes")
    }else{
@@ -57,8 +57,10 @@ function UpdateRestaurantPage() {
   return (
       <div>
        <Navbar/> 
+         {/*  here select tag */}
          <SelectTag setUser_id={setUser_id} user_id={user_id} />  
 
+           {/*  here edit restaurant form  */}
          <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
               <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
                 <Typography component="h1" variant="h4" align="center">
@@ -138,6 +140,7 @@ function UpdateRestaurantPage() {
                     </Box>
               </Paper> 
             </Container>
+            {/* here end */}
 
        <Footer/>
       </div>
