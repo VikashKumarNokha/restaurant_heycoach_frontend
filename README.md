@@ -51,26 +51,26 @@ A full-stack web application for listing and managing restaurants, built with Re
 
 ## How to Run
 
-1. Clone this repository to your local machine.
 
-2. Navigate to the "server" directory and run the following commands to set up the server:
+1. For Frontend 
 
 ```
-
+clone the repo in local machine
 npm install
-node index.js
+npm start
 
 ```
 
-3. Open a new terminal, navigate to the "view" directory, and run the following commands to set up the client:
+2. For Backend
 
 ```
-cd view
+https://github.com/VikashKumarNokha/restaurant_heycoach_backend
+clone the given repo in local machine
 npm install
-npm run dev
+npm start
 ```
 
-4. The application should be accessible in your web browser at `http://localhost:3000`.
+3. The application should be accessible in your web browser at `http://localhost:3000`.
 
 ## Contributing
 
