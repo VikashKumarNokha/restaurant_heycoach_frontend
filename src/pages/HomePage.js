@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import MediaCard from '../components/Card'
 import { baseurl } from '../utilities/BaseUrl'
 import axios from 'axios'
+import {useNavigation } from 'react-router-dom'
 
 function HomePage() {
     const [restaurantData, setRestaurantData] = useState([]);
@@ -33,13 +34,17 @@ function HomePage() {
         console.log("err", err);
     })
   }
-     
+
+
+    
+  
+
 
 
   return (
     <div>
         {/* Navbar componenet for home page  */}
-        <Navbar/>
+        <Navbar  />
         {/*navber end here  */}
        
         <div style={{display : "flex", justifyContent : "space-evenly", flexWrap :"wrap", margin : "10px"}}>

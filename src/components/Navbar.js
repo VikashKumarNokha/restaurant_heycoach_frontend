@@ -7,7 +7,12 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
-export default function Navbar() {
+import {  useNavigate } from 'react-router-dom';
+
+export default function Navbar({}) {
+
+  const navigate = useNavigate();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -18,13 +23,14 @@ export default function Navbar() {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
+            onClick={()=>navigate("/")}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Restaurant APP
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button onClick={()=>navigate("/addrestarant")} color="inherit">Add Restaurant</Button>
         </Toolbar>
       </AppBar>
     </Box>
