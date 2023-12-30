@@ -78,6 +78,7 @@ function UpdateRestaurantPage() {
                               fullWidth
                               //autoComplete="given-name"
                               variant="standard"
+                              focused ={editdata?.name ? true : false}
                           />
                           </Grid>
                           <Grid item xs={12} sm={6}>
@@ -91,6 +92,7 @@ function UpdateRestaurantPage() {
                               fullWidth
                               autoComplete="family-name"
                               variant="standard"
+                              focused ={editdata?.image_url ? true : false}
                           />
                           </Grid>
                           <Grid item xs={12}>
@@ -104,6 +106,7 @@ function UpdateRestaurantPage() {
                               fullWidth
                               autoComplete="shipping address-line1"
                               variant="standard"
+                              focused ={editdata?.address ? true : false}
                           />
                           </Grid>
                           <Grid item xs={12} sm={6}>
@@ -117,6 +120,7 @@ function UpdateRestaurantPage() {
                               fullWidth
                               autoComplete="shipping address-level2"
                               variant="standard"
+                              focused ={editdata?.email ? true : false}
                           />
                           </Grid>
                           <Grid item xs={12} sm={6}>
@@ -128,6 +132,7 @@ function UpdateRestaurantPage() {
                               label="Enter Mobile Number"
                               fullWidth
                               variant="standard"
+                              focused ={editdata?.mobile ? true : false}
                           />
                           </Grid>
 

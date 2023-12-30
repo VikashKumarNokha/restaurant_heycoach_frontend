@@ -23,7 +23,7 @@ function AddRestaurantPage() {
   
   //  this function is for add new restaurant 
 function addRestaurantfun(){ 
-  if(addRestaurant.name == "" || addRestaurant.image_url == "" || addRestaurant.address == "" ||  addRestaurant.email == "" ||  addRestaurant.phone == "" || user_id == "" ){
+  if(addRestaurant.name == "" || addRestaurant.image_url == "" || addRestaurant.address == "" ||  addRestaurant.email == "" ||  addRestaurant.mobile == "" || user_id == "" ){
      alert("please fill all input boxes and select the user that is added by")
   }else{
    return  axios.post( baseurl + "restaurants", {...addRestaurant, added_by : user_id } ).then((res)=>{
